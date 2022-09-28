@@ -107,7 +107,7 @@ describe('GildedRose', function () {
     testItemHistory(expectedHistory);
   });
 
-  it('Backstage passes to a TAFKAL80ETC concert (in 10 days)', () => {
+  it('Backstage passes to a TAFKAL80ETC concert (in 5 days)', () => {
     const expectedHistory = [
       ['Backstage passes to a TAFKAL80ETC concert', 5, 49],
       ['Backstage passes to a TAFKAL80ETC concert', 4, 50],
@@ -120,6 +120,23 @@ describe('GildedRose', function () {
       ['Backstage passes to a TAFKAL80ETC concert', -3, 0],
       ['Backstage passes to a TAFKAL80ETC concert', -4, 0],
     ];
+    testItemHistory(expectedHistory);
+  });
+
+  it('Conjured Mana Cake', () => {
+    const expectedHistory = [
+      ['Conjured Mana Cake', 5, 15],
+      ['Conjured Mana Cake', 4, 13],
+      ['Conjured Mana Cake', 3, 11],
+      ['Conjured Mana Cake', 2, 9],
+      ['Conjured Mana Cake', 1, 7],
+      ['Conjured Mana Cake', 0, 5],
+      ['Conjured Mana Cake', -1, 1],
+      ['Conjured Mana Cake', -2, 0],
+      ['Conjured Mana Cake', -3, 0],
+      ['Conjured Mana Cake', -4, 0],
+    ];
+
     testItemHistory(expectedHistory);
   });
 });
